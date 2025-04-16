@@ -1,0 +1,13 @@
+services:
+  uta:
+    build: ./sudahlah
+    container_name: uta
+    volumes:
+      - ./sudahlah:var/www/html/
+    ports:
+      - 9008:80
+    networks:
+      - web
+networks:
+  web:
+    driver: bridge
