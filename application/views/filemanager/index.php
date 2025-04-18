@@ -1,5 +1,4 @@
 <div class="container-fluid">
-    <!-- <h1 class="h3 mb-0 text-gray-800">Data Dokumen Masuk</h1> -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <span class="text-white-50 p-3">
             <input type="date" name="cekout" class="form-control shadow-none">

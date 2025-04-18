@@ -1,6 +1,4 @@
-<!-- Begin Page Content -->
 <div class="container-fluid">
-
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <div class="d-sm-flex">
             <a href="<?= base_url() ?>filemanager" class="btn btn-md btn-circle btn-secondary">
@@ -25,10 +23,11 @@
                 </div>
 
             </div>
-
-        <?php endforeach; ?>
-
         </div>
+
+    <?php endforeach; ?>
+
+</div>
 </div>
 
 
