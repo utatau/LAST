@@ -230,7 +230,7 @@ function formatuta($tanggal)
                     <?php endif; ?>
 
                     <div class="form-group"><label>Tanggal Upload</label>
-                        <input class="form-control" name="tgl_upload" id="tgl_upload"></input>
+                        <input class="form-control" name="tgl_upload" id="tgl_upload" type="date"></input>
                     </div>
                     <div class="form-group">
                         <label>Tambah Masa Berlaku</label>
@@ -247,7 +247,7 @@ function formatuta($tanggal)
                         <input class="form-control" name="tambah_masa_berlaku" id="tambah_masa_berlaku" type="hidden" readonly>
                     </div>
                     <div class="form-group"><label>File</label>
-                        <input class="form-control" name="fileLama" id="fileLama"></input>
+                        <input class="form-control" name="fileLama" id="fileLama" type="file"></input>
                     </div>
 
                 </div>
