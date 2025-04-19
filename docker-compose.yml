@@ -1,13 +1,13 @@
 services:
-  uta:
-    build: ./sudahlah
-    container_name: uta
+  arsip:
+    build: .
+    container_name: arsip
     volumes:
-      - ./sudahlah:/var/www/html/
+      - ./:/var/www/html/
     ports:
       - 9008:80
     networks:
-      - web
+      - arsip
 networks:
-  web:
+  arsip:
     driver: bridge
