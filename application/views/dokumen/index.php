@@ -20,7 +20,7 @@ function formatuta($tanggal)
 
 <div class="container-fluid">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Dokumen</h1>
+        <!-- <h1 class="h3 mb-0 text-gray-800">Dokumen</h1> -->
         <?php if ($this->session->userdata('login_session')['level'] == 'admin' || $this->session->userdata('login_session')['level'] == 'gudang') : ?>
             <a data-toggle="modal" data-target="#tambah" class="btn btn-sm btn-primary btn-icon-split">
                 <span class="text text-white">Tambah Data</span>
@@ -201,7 +201,7 @@ function formatuta($tanggal)
                     </div>
 
                     <div class="form-group"><label>KPJ</label>
-                        <input class="form-control" name="kpj" id="kpj"></input>
+                        <input class="form-control" name="kpj" id="kpj" type="number"></input>
                     </div>
                     <?php if ($jmlKategori > 0): ?>
                         <div class="form-group"><label>Kategori</label>

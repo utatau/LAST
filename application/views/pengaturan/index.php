@@ -7,7 +7,7 @@
                         <i class="fas fa-arrow-left"></i>
                     </a> -->
                     &nbsp;
-                    <h1 class="h2 mb-0 text-gray-800">Ganti Password</h1>
+                    <!-- <h1 class="h2 mb-0 text-gray-800">Ganti Password</h1> -->
                 </div>
 
             </div>

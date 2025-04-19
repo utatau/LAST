@@ -52,7 +52,13 @@ if (!$this->session->has_userdata('login_session')) {
                 <div class="sidebar-brand-icon mb-3">
                     <img src="<?= base_url(); ?>assets/Icon/logo.png" width="50">
                 </div>
-                <div class="sidebar-brand-text mx-3">PENGELOLA ARSIP</div>
+                <div class="sidebar-brand-text mx-3">
+                    <?php
+                    $level = $this->session->userdata('login_session')['level'];
+                    echo ($level == 'admin') ? 'PENGELOLA ARSIP' : 'STAFF';
+                    ?>
+                </div>
+
             </a>
 
             <!-- Divider -->
