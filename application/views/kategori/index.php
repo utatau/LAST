@@ -163,8 +163,11 @@
 
                 <div class="col-lg-12">
                     <br>
+                    <div class="form-group">
+                        <input class="form-control" name="head_kategori" id="head_kategori" type="hidden">
+                    </div>
                     <div class="form-group"><label>Nama Kategori</label>
-                        <input class="form-control" name="head_kategori" id="head_kategori" type="text">
+                        <input class="form-control" name="kategori" id="kategori" type="text">
                     </div>
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary btn-icon-split">

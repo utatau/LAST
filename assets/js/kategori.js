@@ -28,7 +28,6 @@ function ambilDataHi(head_kategori) {
 }
 function ambilDataHead(head_kategori) {
     console.log("Head Kategori yang dikirim:", head_kategori);
-
     $('#ubah input[name="head_kategori"]').val(head_kategori);
 }
 

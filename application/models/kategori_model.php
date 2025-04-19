@@ -88,7 +88,6 @@ class kategori_model extends ci_model
         $this->db->where($where);
         $this->db->update($table, $data);
     }
-
     public function buat_kode()
     {
         $this->db->select('RIGHT(kategori.id_kategori,4) as kode', FALSE);

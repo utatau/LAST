@@ -127,32 +127,32 @@ class Kategori extends CI_Controller
     }
     public function ubah_kategori()
     {
-        $id_kategori = $this->input->post('id_kategori');
+        $sebelumnya = $this->input->post('sebelumnya');
         $new_head_kategori = $this->input->post('head_kategori');
 
-        $this->load->model('Kategori_model');
-        $result = $this->Kategori_model->update_kategori($id_kategori, $new_head_kategori);
+        $this->load->model('kategori_model');
+        $result = $this->kategori_model->upgrade_kategori($sebelumnya, $new_head_kategori, 'kategori');
 
         if ($result) {
             $this->session->set_flashdata('Pesan', '<script>
-		$(document).ready(function() {
-			swal.fire({
-				title: "Berhasil diubah!",
-				icon: "success",
-				confirmButtonColor: "#4e73df",
-			});
-		});
-		</script>');
+    	$(document).ready(function() {
+    		swal.fire({
+    			title: "Berhasil diubah!",
+    			icon: "success",
+    			confirmButtonColor: "#4e73df",
+    		});
+    	});
+    	</script>');
         } else {
             $this->session->set_flashdata('Pesan', '<script>
-		$(document).ready(function() {
-			swal.fire({
-				title: "Gagal diubah!",
-				icon: "success",
-				confirmButtonColor: "#4e73df",
-			});
-		});
-		</script>');
+    	$(document).ready(function() {
+    		swal.fire({
+    			title: "Gagal diubah!",
+    			icon: "success",
+    			confirmButtonColor: "#8888",
+    		});
+    	});
+    	</script>');
         }
 
         redirect('kategori');
@@ -160,20 +160,15 @@ class Kategori extends CI_Controller
 
     public function proses_ubah()
     {
-
-        $kode = $this->input->post('id_kategori');
-        $kategori = $this->input->post('head_kategori');
-        $sub_kategori = $this->input->post('sub_kategori');
-        $kepala = $this->input->post('kode_kategori');
+        $sebelumnya = $this->input->post('head_kategori');
+        $kategori = $this->input->post('kategori');
 
         $data = array(
-            'head_kategori' => $kategori,
-            'sub_kategori' => $sub_kategori,
-            'kode_kategori' => $kepala
+            'head_kategori' => $kategori
         );
 
         $where = array(
-            'id_kategori' => $kode
+            'head_kategori' => $sebelumnya
         );
 
         $this->kategori_model->ubah_data($where, $data, 'kategori');
