@@ -4,7 +4,7 @@
             <div class="card-body p-5">
                 <div class="text-center">
                     <img width="150px" src="<?= base_url() ?>assets/Icon/logo.png" alt="">
-                    <h1 class="h4 text-gray-900 mb-4">Login</h1>
+                    <h1 class="h4 text-gray-900 mb-4">BPJS APATU</h1>
                 </div>
                 <form class="user">
                     <div class="form-group">

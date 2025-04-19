@@ -114,7 +114,7 @@ function formatuta($tanggal)
                     </div>
                     <div class="form-group">
                         <label>KPJ</label>
-                        <input class="form-control" name="kpj"></input>
+                        <input class="form-control" name="kpj" type="number"></input>
                     </div>
                     <?php if ($jmlKategori > 0): ?>
                         <div class="form-group">
